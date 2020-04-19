@@ -1,28 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Home Page</title>
-    <LINK REL=StyleSheet HREF="../css/style.css" TYPE="text/css" MEDIA=screen>
-        <head>
-            <title>Home Page</title>
-            <LINK REL=StyleSheet HREF="style.css" TYPE="text/css" MEDIA=screen>
-        </head>
-        <body>
-            <header id="Home Page">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Page</title>
+        <LINK REL=StyleSheet HREF="../css/style.css" TYPE="text/css" MEDIA=screen>
+    </head>
+    <body>
+            <header id="TopOfHomePage">
                 <img src="../img/rtpheader.jpg" 
                 alt="RTP Header" style="width:1250px;height:110px;">
-                <h1>This is the home page.</h1>
                 <nav>
-                    
+                    <a href="home.html">Home></a>
+                    <a href="profileinfo.html">My Profile></a>
+                    <a href="logout.html">Log Out</a>
                 </nav>
-
-
+                <br>
+                <span>
+                    <img src="../img/employeepic.jpg" 
+                    alt="Employee Picture" style="width:150px;height:200px;">
+                </span>
+                <h2><em>Hello Mike Mohr!</em> Welcome To The RTP Employee Information Portal!</h2>
+                <span>
+                    <p>Last Login: April 13, 2020 01:13 PM CST</p>
+                </span>
             </header>  
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+            <br>
+            <div id="Announcements">
+                <label for="Announcements"><h4>Announcements</h4></label>
+                <h5>04/09/20</h5>
+                <h5>RTP Summer Picnic News:</h5>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend rutrum 
+                    malesuada. Phasellus feugiat arcu mi, vitae accumsan metus condimentum et.
+                    Donec pulvinar quam...
+                </p>
+                <a href="announcement1.html">More</a>
+                <br>
+                <h5>04/13/20</h5>
+                <h5>Coronavirus Update:</h5>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend rutrum 
+                    malesuada. Phasellus feugiat arcu mi, vitae accumsan metus condimentum et.
+                    Donec pulvinar quam...
+                </p>
+                <a href="announcement2.html">More</a>
+                </div>
+            <br>
+            <br>
+            <div id="EmployeeSchedule">
+                <label for="EmployeeSchedule"><h4>Employee Schedule</h4></label>
+                <img src="../img/calendar.JPG" 
+                alt="Employee Schedule Calendar" style="width:800px;height:300px;">   
+                <a href="vactioninfo.html">View Vacation Info</a>
+            </div>
+            <br>
+            <br>
+            <div id="EmployeeInfo">
+                <label for="EmployeeInfo"><h4>Employee Information</h4></label>
+                <p><strong>Title: </strong>Systems Software Developer</p>
+                <p><strong>Address: </strong>853 East Belleview Street, Apt. 209   Winona, MN  55987</p>
+                <p><strong>Home Phone: </strong></p>
+                <p><strong>Cell Phone: </strong>(507)458-8122</p>
+                <p><strong>Personal Email: </strong>mmohr.55987@gmail.com</p>
+                <input type="checkbox" id="Yes" name="PersonalEmail" value="Yes">
+                <label for="PersonalEmail">Send company correspondance emails also to personal email?</label>
+                <br>
+                <br>
+                <a href="addrchange.html">Change Address/Phone</a>
+            </div>
+            <br>
+            <br>
+            <div id="PayrollInfo"> 
+                <label for="PayrollInfo"><h4>Payroll Information</h4></label>
+                <a href="../img/currpaystub.JPG">View Current Paystub</a>>
+                <a href="../img/prevpaystub.JPG">View Previous Paystub</a>
+                <a href="taxforms.html">View Tax Forms</a>
+                <a href="hrforms.html">View HR Forms</a>
+            </div>
+            <br>
+            <br>
+            <div id="TrainingInfo">
+                <label for="TrainingInfo"><h4>Training Information</h4></label>
+                <p><h5>Sexual Harassment In The Workplace</h5></p>
+                <a href="../doc/sexualharassmentinworkplacepolicy.pdf">Company Policy On Sexual Harassment In The Workplace</a>
+                <a href="https://www.youtube.com/watch?v=NGc7KfQ3uWs">Video: Sexual Harrassment In The Workplace</a>
+                <a href="https://www.eeoc.gov/laws/types/sexual_harassment.cfm">EEOC Website</a>    
+                <br>       
+                <p><h5>Safety In The Workplace</h5></p>
+                <a href="../img/sampleworkplacesafetypolicy.jpg">Company Policy On Safety In The Workplace</a>
+                <a href="https://www.youtube.com/watch?v=GvFD6rUo6cU">Video: Safety In The Workplace</a>
+            </div>
+            <br><br><br><br><br><br>
+            <a href="#TopOfHomePage">Back To Top</a>
             <footer>
                 <img src="../img/rtpfooter.JPG" 
-                alt="RTP Footer" style="width:1200px;height:110px;">
-            </p>        
+                alt="RTP Footer" style="width:1200px;height:110px;">     
             </footer>
-        </body> 
-        </html>
+   </body> 
+</html>
