@@ -10,26 +10,28 @@
             <header id="TopOfHomePage">
                 <img src="../img/rtpheader.jpg" 
                 alt="RTP Header" style="width:1250px;height:110px;">
-                <nav>
-                    <a href="home.html">Home></a>
-                    <a href="profileinfo.html">My Profile></a>
-                    <a href="logout.html">Log Out</a>
-                </nav>
-                <br>
-                <span>
+                <section id="navtab">
+                    <nav id="navtab">
+                        <a href="profileinfo.html">My Profile</a>
+                        <a href="logout.html">Log Out</a>
+                    </nav>
+                </section>
+                <section id="employeepic">
                     <img src="../img/employeepic.jpg" 
                     alt="Employee Picture" style="width:150px;height:200px;">
-                </span>
+                </section>   
                 <h2><em>Hello Mike Mohr!</em> Welcome To The RTP Employee Information Portal!</h2>
-                <span>
-                    <p>Last Login: April 13, 2020 01:13 PM CST</p>
-                </span>
+                <p><h5>Last Login: April 13, 2020 01:13 PM CST</h5></p>
+                <br>
             </header>  
             <br>
-            <div id="Announcements">
-                <label for="Announcements"><h4>Announcements</h4></label>
-                <h5>04/09/20</h5>
-                <h5>RTP Summer Picnic News:</h5>
+            <section class="homepagesections">
+                <label for="homepagesections">Announcements</label>
+             </section>
+            <section>
+                <h5 class="homepage_subheadings">
+                <label for="homepage_subheadings">04/09/20 - RTP Summer Picnic News:</label>
+                </h5>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend rutrum 
                     malesuada. Phasellus feugiat arcu mi, vitae accumsan metus condimentum et.
@@ -37,60 +39,84 @@
                 </p>
                 <a href="announcement1.html">More</a>
                 <br>
-                <h5>04/13/20</h5>
-                <h5>Coronavirus Update:</h5>
+                <h5 class="homepage_subheadings">
+                    <label for="homepage_subheadings">04/13/20 - Coronavirus Update:</label>
+                </h5>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eleifend rutrum 
                     malesuada. Phasellus feugiat arcu mi, vitae accumsan metus condimentum et.
                     Donec pulvinar quam...
                 </p>
                 <a href="announcement2.html">More</a>
-                </div>
+            </section>
             <br>
             <br>
-            <div id="EmployeeSchedule">
-                <label for="EmployeeSchedule"><h4>Employee Schedule</h4></label>
+            <section class="homepagesections">
+                <label for="homepagesections">Employee Schedule</label>
+            </section>
+            <section>
+            <p>
                 <img src="../img/calendar.JPG" 
                 alt="Employee Schedule Calendar" style="width:800px;height:300px;">   
                 <a href="vactioninfo.html">View Vacation Info</a>
-            </div>
+            </p>
+            </section>
             <br>
             <br>
-            <div id="EmployeeInfo">
-                <label for="EmployeeInfo"><h4>Employee Information</h4></label>
-                <p><strong>Title: </strong>Systems Software Developer</p>
-                <p><strong>Address: </strong>853 East Belleview Street, Apt. 209   Winona, MN  55987</p>
-                <p><strong>Home Phone: </strong></p>
-                <p><strong>Cell Phone: </strong>(507)458-8122</p>
-                <p><strong>Personal Email: </strong>mmohr.55987@gmail.com</p>
-                <input type="checkbox" id="Yes" name="PersonalEmail" value="Yes">
-                <label for="PersonalEmail">Send company correspondance emails also to personal email?</label>
+            <section class="homepagesections">
+                <label for="homepagesections">Employee Information</label>
+            </section>
+            <section>
+                <p>
+                    <p><strong>Title: </strong>Systems Software Developer</p>
+                    <p><strong>Address: </strong>853 East Belleview Street, Apt. 209   Winona, MN  55987</li>
+                    <p><strong>Home Phone: </strong></p>
+                    <p><strong>Cell Phone: </strong>(507)458-8122</p>
+                    <p><strong>Personal Email: </strong>mmohr.55987@gmail.com</p>
+                    <p>
+                        <input type="checkbox" id="Yes" name="PersonalEmail" value="Yes">
+                        <label for="PersonalEmail">Send company correspondance emails also to personal email?</label>
+                    </p>
+                    <p>
+                        <a href="addrchange.html">Change Address/Phone</a>
+                    </p>
                 <br>
                 <br>
-                <a href="addrchange.html">Change Address/Phone</a>
-            </div>
+            </section>
             <br>
             <br>
-            <div id="PayrollInfo"> 
-                <label for="PayrollInfo"><h4>Payroll Information</h4></label>
+            <section class="homepagesections"> 
+                <label for="homepagesections">Payroll Information</label>
+            </section>
+            <section>
                 <a href="../img/currpaystub.JPG">View Current Paystub</a>>
                 <a href="../img/prevpaystub.JPG">View Previous Paystub</a>
                 <a href="taxforms.html">View Tax Forms</a>
                 <a href="hrforms.html">View HR Forms</a>
-            </div>
+            </section>
             <br>
             <br>
-            <div id="TrainingInfo">
-                <label for="TrainingInfo"><h4>Training Information</h4></label>
-                <p><h5>Sexual Harassment In The Workplace</h5></p>
-                <a href="../doc/sexualharassmentinworkplacepolicy.pdf">Company Policy On Sexual Harassment In The Workplace</a>
-                <a href="https://www.youtube.com/watch?v=NGc7KfQ3uWs">Video: Sexual Harrassment In The Workplace</a>
-                <a href="https://www.eeoc.gov/laws/types/sexual_harassment.cfm">EEOC Website</a>    
+            <section class="homepagesections">
+                <label for="homepagesections">Training Information</label>
+            </section>
+            <section>
+                <h5 class="homepage_subheadings">
+                    <label for="homepage_subheadings">Sexual Harassment In The Workplace:</label>
+                </h5>
+                <p>
+                    <a href="../doc/sexualharassmentinworkplacepolicy.pdf">Company Policy On Sexual Harassment In The Workplace</a>
+                    <a href="https://www.youtube.com/watch?v=NGc7KfQ3uWs">Video: Sexual Harrassment In The Workplace</a>
+                    <a href="https://www.eeoc.gov/laws/types/sexual_harassment.cfm">EEOC Website</a>    
+                </p>
                 <br>       
-                <p><h5>Safety In The Workplace</h5></p>
-                <a href="../img/sampleworkplacesafetypolicy.jpg">Company Policy On Safety In The Workplace</a>
-                <a href="https://www.youtube.com/watch?v=GvFD6rUo6cU">Video: Safety In The Workplace</a>
-            </div>
+                <h5 class="homepage_subheadings">
+                    <label for="homepage_subheadings">Safety In The Workplace:</label>
+                </h5>
+                <p>
+                    <a href="../img/sampleworkplacesafetypolicy.jpg">Company Policy On Safety In The Workplace</a>
+                    <a href="https://www.youtube.com/watch?v=GvFD6rUo6cU">Video: Safety In The Workplace</a>
+                </p>
+            </section>
             <br><br><br><br><br><br>
             <a href="#TopOfHomePage">Back To Top</a>
             <footer>

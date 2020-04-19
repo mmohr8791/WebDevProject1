@@ -1,6 +1,55 @@
 body {
-    background-color: white;
-h1 {
-    color: blue;
-    font-family: 'Times New Roman', Times, serif;
+    background-color: beige;
+    font-family: "Times New Roman", Times, serif;
 }
+    #navtab{
+        margin-top: 1em;
+        margin-left: 32em;
+    }
+    #employeepic{
+        margin-left: 3em;
+    }
+    .homepagesections{
+        background-color: darkgrey;
+        font-weight: bold;
+        font-style: italic;
+        text-decoration: underline;
+    }
+    .homepage_subheadings{
+        text-decoration: underline;
+        text-emphasis-color: red;
+    }
+    p {
+    color: black;
+    margin-left: 3em;
+    }
+
+
+/*  properties \
+color:
+font-family:
+font-size:
+font-weight:
+font-style:
+text-decoration:
+text-align:
+width:
+height:
+
+padding:
+padding-left:
+padding-right:
+padding-top:
+padding-bottom:
+margin:
+margin-left:
+margin-right:
+margin-top:
+margin-bottom:
+border:
+border-left:
+border-right:
+border-top:
+border-bottom:
+
+*/
