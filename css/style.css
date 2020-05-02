@@ -1,28 +1,207 @@
 body {
     background-color: beige;
-    font-family: "Times New Roman", Times, serif;
+    font-family: Arial, Tahoma, "Times New Roman", Times, serif;
+    font-size: 1.25em;
+    margin-top: 0em;
+    margin-bottom: 0em;
 }
+#loginMessage{
+    float: left;
+    margin-left: 1em;
+    width: 25em;
+    font-size: 1.6em;
+}
+#loginForm{
+    clear: left;
+    float: left;
+    margin-left: 1em;
+    width: 15em;
+    height: 4em;
+    font-size: 1.8em;
+}
+#userName{
+    width: 7.5em;
+    height: 1.5em;
+    font-size: 24px;
+}
+#passWord{
+    width: 8.5em;
+    height: 1.5em;
+    font-size: 24px;
+}
+section#carousel > figure > img {
+    display: none;
+    margin: 0px auto;
+}
+section#carousel > figure.visible > img {
+    display: block;
+    float: right;
+    margin-right: 5em;
+    width: 40em;
+    height: 26em;
+    position: relative;
+    overflow: hidden;
+}
+section#carousel > figure > figcaption {
+    display: none;
+}
+section#carousel > figure.visible > figcaption {
+    display: block;
+    float: right;
+    width: 40em;
+    height: 10em;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-size: 1.5em;
+    /*
+ #pageHeader{
+    max-width: 100%;
+    max-height: 100%;
+}
+*/
+    /*
     #navtab{
-        margin-top: 1em;
-        margin-left: 32em;
+        float: right;
+        width: 15em;
+    }
+    */
+
+    .navbuttons{
+        float: right;
+        display: block;
+        width: 5em;
+        height: 1em;
+        background: seagreen;
+        padding: 1em;
+        margin-top: .5em;
+        margin-right: .5em;
+        text-align: center;
+        border-radius: 1em;
+        color: white;
+        font-weight: bold;
+    }
+    .navbuttons:hover{
+        background-color: lightgray;
+        color: black;
     }
     #employeepic{
-        margin-left: 3em;
+        clear: both;
+        float: left;
+        /* align-self: left;*/
+        margin-left: 1em;
+        margin-bottom: 1em;
     }
+    #hellomsg{
+        float: left;
+        margin-left: .5em;
+    }
+    #welcomemsg{
+        float: left;
+        margin-left: 2em;
+    }
+    #lastloginmsg {
+        float: left;
+        margin-left: 15em;   
+        margin-top: 0em; 
+    }
+    .portalSummaryHeading {
+        /* float: none; */
+        margin-left: 25em;
+        margin-top: 8em;
+        margin-bottom: 1em;
+        font-weight: bold;
+    }
+    .portalSummaryLines {
+        /* float: none; */
+        margin-left: 30em;
+        font-weight: bold;
+    }
+    #home_announcements, #home_scheduleinfo, #home_employeeinfo, #home_payrollinfo, #home_traininginfo {
+    clear: both;
+    background-color: seagreen;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 30px;
+    text-decoration: underline;
+    margin-top: 3em;
+    height: 40px;
+    color: black;
+}
     .homepagesections{
-        background-color: darkgrey;
+        clear: both;
+        background-color: seagreen;
         font-weight: bold;
         font-style: italic;
+        font-size: 30px;
         text-decoration: underline;
+        margin-top: 3em;
+        height: 40px;
+        color: black;
     }
     .homepage_subheadings{
         text-decoration: underline;
-        text-emphasis-color: red;
+        margin: 0em;
+        margin-top: .5em;
+    }
+    .vacinfobutton{
+        float: left;
+        display: block;
+        width: 9em;
+        height: 1em;
+        background: seagreen;
+        font-size: 85%;
+        padding: .5em;
+        text-align: center;
+        border-radius: 1em;
+        color: white;
+        font-weight: bold;
+    }
+    .vacinfobutton:hover{
+        background-color: lightgray;
+        color: black;
+    }
+    .addrchangebutton{
+        float: left;
+        display: block;
+        width: 12em;
+        height: 1em;
+        background: seagreen;
+        font-size: 85%;
+        padding: .5em;
+        text-align: center;
+        border-radius: 1em;
+        margin-bottom: 3em;
+        color: white;
+        font-weight: bold;
+    }
+    .addrchangebutton:hover{
+        background-color: lightgray;
+        color: black;
     }
     p {
     color: black;
     margin-left: 3em;
+    margin-top: .5em;
     }
+    .toTopOfPageButton{
+        float: left;
+        display: block;
+        width: 6em;
+        height: 1em;
+        background: seagreen;
+        font-size: 75%;
+        padding: .5em;  
+        text-align: center;
+        border-radius: 1em;
+        color: white;
+        font-weight: bold;
+    }
+    .toTopOfPageButton:hover{
+        background-color: lightgray;
+        color: black;
+    }
+
 
 
 /*  properties \
