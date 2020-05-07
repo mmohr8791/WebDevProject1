@@ -1,207 +1,505 @@
-body {
+/* --- global settings-------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* --- standard elements ----------------- */
+
+html, body {
+    height: 100%;
     background-color: beige;
     font-family: Arial, Tahoma, "Times New Roman", Times, serif;
-    font-size: 1.25em;
-    margin-top: 0em;
-    margin-bottom: 0em;
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
-#loginMessage{
-    float: left;
-    margin-left: 1em;
-    width: 25em;
-    font-size: 1.6em;
+
+#container {
+    min-height: 100%;
 }
-#loginForm{
-    clear: left;
-    float: left;
-    margin-left: 1em;
-    width: 15em;
-    height: 4em;
-    font-size: 1.8em;
+
+#main {
+    overflow: auto;
+    padding-bottom: 64px;
 }
-#userName{
-    width: 7.5em;
-    height: 1.5em;
+
+/* --- header/footer --------------------- */
+
+#footer {
+    background-color: seagreen;
+    position: relative;
+    margin-top: -3px;
+    /*
+    height: 100px;
+    */
+    /*
+    margin-top: -100px;
+    */
+    clear: both;
+}
+
+#footerMessage {
+    font-family: Verdana, Hevetica, Arial, sans-serif;
     font-size: 24px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
 }
-#passWord{
-    width: 8.5em;
-    height: 1.5em;
+
+#copyRight {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+/* --- buttons --------------------------- */
+
+#logInButton {                              /* login button */
+    float: left;
+    display: block;
+    margin-top: -160px;
+    margin-left: 175px;
+    width: 90px;
+    height: 40px;
+    background: rgb(8, 104, 51);
+    padding: 4px;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#logInButton:hover {                    
+    background-color: lightgray;
+    color: black;
+}
+
+.navButtons {                               /* nav buttons */     
+    float: right;
+    display: block;
+    /* margin-left: 175px; */
+    margin-top: 10px;
+    margin-right: 20px;
+    width: 94px;
+    height: 28px;
+    background-color: seagreen;
+    padding: 2px;
+    padding-top: 10px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navButtons:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+#vacInfoButton {                            /* vac button */
+    clear: both;
+    float: left;
+    display: block;
+    width: 130px;
+    height: 48px;
+    margin-bottom: 18px;
+    margin-left: 32px;
+    padding: 2px;
+    padding-top: 8px;
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background: seagreen;
+}
+
+#vacInfoButton:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+.addrChangeButton {                         /* addr change button */
+    float: left;
+    display: block;
+    width: 148px;
+    height: 48px;
+    margin-top: 22px;
+    margin-bottom: 28px;
+    margin-left: 48px;
+    padding: 2px;
+    padding-top: 8px;
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    background: seagreen;
+    color: white;
+}
+
+.addrChangeButton:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+.toTopOfPageButton {                        /* top of page button */
+    float: left;
+    display: block;
+    width: 6em;
+    height: 1em;
+    background: seagreen;
+    font-size: 75%;
+    padding: .5em;  
+    text-align: center;
+    border-radius: 1em;
+    color: white;
+    font-weight: bold;
+}
+
+.toTopOfPageButton:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+
+/* --- id's ------------------------------ */
+
+#loginWelcomeMessage {
+    float: left;
+    margin-left: 18px;
+    margin-top: 12px;
+    width: 1200px;
+    font-size: 32px;
+}
+
+#loginMessage {
+    float: left;
+    margin-top: 8px;
+    margin-left: 32px;
+    width: 1000px;
+    font-size: 28px;
+}
+
+#loginForm {
+    float: left;
+    margin-top: -270px; 
+    margin-left: 82px;
+    width: 600px;
+    height: 125px;
+    font-size: 18px;
+}
+
+#enterUserName {
+    width: 180px;
+    height: 36px;
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+#enterPassword {
+    width: 150px;
+    height: 36px;
+    font-size: 18px;
+}
+
+#loginSummary {
+    clear: both;
+    float: left;
+    margin-top: -15px;
+    margin-bottom: 0;
+    margin-left: 45px;
+    font-size: 28px;
+}
+
+#forgotPassword {
+    float: left;
+    margin-top: -75px;
+    margin-left: 125px;
+    font-size: 16;
+}
+
+#helloMessage {
+    float: left;
+    margin-top: 12px;
+    margin-left: 24px;
     font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+}    
+
+#welcomeMessage { 
+    float: left;
+    margin-top: 12px;
+    margin-left: 175px;
+    font-size: 24px;
+    font-weight: bold;
 }
+
+#lastLoginMessage {
+    float: left;
+    margin-left: 250px; 
+    font-size: 18px;  
+}
+
+#employeePic img {
+    float: left;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    margin-left: 18px;
+    border: 6px solid seagreen;
+    /* border-radius: 18px; */
+    padding: .5px;
+    height: 300px;
+    width: 235px;  
+    clear: both;
+}
+
+#portalSummaryHeading {
+    clear: right;
+    float: right;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    margin-right: 500px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#importantAnnouncements, #employeeScheduleInfo, #employeePersonalInfo, #employeePayrollInfo, #trainingInfo {
+    float: left;
+    background: linear-gradient(to right, #009933 0%, #ffff00 100%);
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 12px;
+    padding-top: 8px;
+    padding-left: 15px;
+    height: 36px;
+    width: 100%;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    clear: both;
+}
+
+#employeeCalendar {
+    /* float: left; */
+    margin-top: 90px;
+    margin-bottom: 12px;
+    margin-left: 18px;
+    border: 8px solid seagreen;
+    /* border-radius: 18px; */
+    padding: -1px;
+    height: 345px;
+    width: 900px;  
+    clear: both;
+}
+
+#currDateHeading {
+    margin-left: 24px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#hoursWorkedHeading {
+    float: left;
+    margin-left: 48px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+    list-style-type: none;
+}
+
+#vacHoursHeading {
+    margin-left: 425px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+    list-style-type: none;
+}
+
+#currWeekHeading {
+    float: left;
+    margin-left: 60px;
+    font-size: 18px;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+#totHoursHeading {
+    margin-left: 440px;
+    font-size: 18px;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+#prevWeekHeading {
+    float: left;
+    margin-left: 60px;
+    font-size: 18px;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+#hoursTakenHeading {
+    margin-left: 440px;
+    font-size: 18px;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+#hoursRemainingHeading {
+    float: left;
+    margin-left: 440px;
+    font-size: 18px;
+    font-weight: bold;
+    list-style-type: none;
+    clear: both;
+}
+
+#personalInfo{
+    clear: both;
+    list-style: none;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 54px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#jobTitle {
+    display: inline;
+    margin-left: 92px;
+    font-size: 18px;
+}
+
+#homeAddr {
+    display: inline;
+    margin-left: 96px;
+    font-size: 18px;
+}
+   
+#homePhone {
+    display: inline;
+    margin-left: 52px;
+    font-size: 18px;
+}
+    
+#cellPhone {
+    display: inline;
+    margin-left: 70px;
+    font-size: 18px;
+}
+   
+#workPhone {
+    display: inline;
+    margin-left: 58px;
+    font-size: 18px;
+}
+   
+#workEmail {
+    display: inline;
+    margin-left: 66px;
+    font-size: 18px;
+    }
+     
+#personalEmail {
+    display: inline;
+    margin-left: 32px;
+    font-size: 18px;
+}
+
+/* --- classes------------------------------ */
+
+
+.portalSummaryLines {
+    margin-top: 12px;
+    margin-bottom: 8px;
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    list-style: none;
+}
+
+
+.homePageSubHeadings {
+    margin-top: 30px;
+    margin-bottom: 16px;
+    margin-left: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+    /* margin: 12px; */
+    clear: both;
+}
+
+.announcement {
+    margin-left: 18px;
+    font-size: 18px;
+}
+
+
+.personalInfoHeadings {
+    display: inline;
+    margin-left: 52px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.includePersonalEmail {
+    margin-top: 24px;
+    margin-bottom: 14px;
+    margin-left: 220px;
+    font-size: 20px;
+    height: 20px;
+    width: 20px;
+    justify-content: center;
+}
+
+
+/* --- carousel ---------------------------- */
+       
 section#carousel > figure > img {
     display: none;
     margin: 0px auto;
 }
+
 section#carousel > figure.visible > img {
-    display: block;
+    clear: both;
     float: right;
-    margin-right: 5em;
-    width: 40em;
-    height: 26em;
+    display: block;
+    margin-top: -50px;
+    margin-right: 35px;
+    width: 575px;
+    height: 350px;
     position: relative;
     overflow: hidden;
 }
+
 section#carousel > figure > figcaption {
     display: none;
 }
+
 section#carousel > figure.visible > figcaption {
+    clear: both;
     display: block;
     float: right;
-    width: 40em;
-    height: 10em;
+    width: 640px;
+    /* height: 48px; */
     text-align: center;
     font-weight: bold;
     color: black;
-    font-size: 1.5em;
-    /*
- #pageHeader{
-    max-width: 100%;
-    max-height: 100%;
+    font-size: 24px;
 }
-*/
-    /*
-    #navtab{
-        float: right;
-        width: 15em;
-    }
-    */
-
-    .navbuttons{
-        float: right;
-        display: block;
-        width: 5em;
-        height: 1em;
-        background: seagreen;
-        padding: 1em;
-        margin-top: .5em;
-        margin-right: .5em;
-        text-align: center;
-        border-radius: 1em;
-        color: white;
-        font-weight: bold;
-    }
-    .navbuttons:hover{
-        background-color: lightgray;
-        color: black;
-    }
-    #employeepic{
-        clear: both;
-        float: left;
-        /* align-self: left;*/
-        margin-left: 1em;
-        margin-bottom: 1em;
-    }
-    #hellomsg{
-        float: left;
-        margin-left: .5em;
-    }
-    #welcomemsg{
-        float: left;
-        margin-left: 2em;
-    }
-    #lastloginmsg {
-        float: left;
-        margin-left: 15em;   
-        margin-top: 0em; 
-    }
-    .portalSummaryHeading {
-        /* float: none; */
-        margin-left: 25em;
-        margin-top: 8em;
-        margin-bottom: 1em;
-        font-weight: bold;
-    }
-    .portalSummaryLines {
-        /* float: none; */
-        margin-left: 30em;
-        font-weight: bold;
-    }
-    #home_announcements, #home_scheduleinfo, #home_employeeinfo, #home_payrollinfo, #home_traininginfo {
-    clear: both;
-    background-color: seagreen;
-    font-weight: bold;
-    font-style: italic;
-    font-size: 30px;
-    text-decoration: underline;
-    margin-top: 3em;
-    height: 40px;
-    color: black;
-}
-    .homepagesections{
-        clear: both;
-        background-color: seagreen;
-        font-weight: bold;
-        font-style: italic;
-        font-size: 30px;
-        text-decoration: underline;
-        margin-top: 3em;
-        height: 40px;
-        color: black;
-    }
-    .homepage_subheadings{
-        text-decoration: underline;
-        margin: 0em;
-        margin-top: .5em;
-    }
-    .vacinfobutton{
-        float: left;
-        display: block;
-        width: 9em;
-        height: 1em;
-        background: seagreen;
-        font-size: 85%;
-        padding: .5em;
-        text-align: center;
-        border-radius: 1em;
-        color: white;
-        font-weight: bold;
-    }
-    .vacinfobutton:hover{
-        background-color: lightgray;
-        color: black;
-    }
-    .addrchangebutton{
-        float: left;
-        display: block;
-        width: 12em;
-        height: 1em;
-        background: seagreen;
-        font-size: 85%;
-        padding: .5em;
-        text-align: center;
-        border-radius: 1em;
-        margin-bottom: 3em;
-        color: white;
-        font-weight: bold;
-    }
-    .addrchangebutton:hover{
-        background-color: lightgray;
-        color: black;
-    }
-    p {
-    color: black;
-    margin-left: 3em;
-    margin-top: .5em;
-    }
-    .toTopOfPageButton{
-        float: left;
-        display: block;
-        width: 6em;
-        height: 1em;
-        background: seagreen;
-        font-size: 75%;
-        padding: .5em;  
-        text-align: center;
-        border-radius: 1em;
-        color: white;
-        font-weight: bold;
-    }
-    .toTopOfPageButton:hover{
-        background-color: lightgray;
-        color: black;
-    }
-
 
 
 /*  properties \

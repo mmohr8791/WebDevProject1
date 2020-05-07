@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logout Page</title>
     <LINK REL=StyleSheet HREF="../css/style.css" TYPE="text/css" MEDIA=screen>
-</head>
+    <script type="text/javascript" src="../js/loginPage.js"></script>
+</head> 
 <body>
-    <header id="logoutpageheader">
-        <img src="../img/rtpheader.jpg" 
-        alt="RTP Header" style="width:1325px;height:110px;">
-        <!--<h1>Welcome to the RTP Employee Information Portal!</h1>-->
+    <header id="pageHeader">
+        <img src="../img/rtpheader.jpg" alt="RTP Header" style="width: 100%;">
+    </header>
+    <section>
         <br><br>
         <h2><strong>You are now logged out of the portal.</strong></h2>
         <h3>Please log in with your username and password.</h3>
-    </header>
-   <section>
+    </section>
+    <section>
         <form>
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" required>
@@ -23,18 +24,18 @@
             <label for="password">Password:</label>
             <input type="text" id="password" name="password" required>
         </form>
-   </section>
-        <p><a href="https://www.vikings.com/">Forgot Your Password?</a></p>
     </section>
-    <br>
-    <p>
-    <a href="home.html">Login</a>
+        <p>
+            <a href="https://www.vikings.com/">Forgot Your Password?</a>
+        </p>
+    </section>
+    <br><p>
+        <a href="home.html">Login</a>
     </p>
     <br><br><br><br><br><br><br><br><br><br><br><br>
     <footer>
-        <img src="../img/rtpfooter.JPG" 
-        alt="RTP Footer" style="width:1325px;height:110px;">
-    </p>        
+        <h3 id="footerMessage">RTP Company Corporate Headquarters - 580 East Front Street, Winona, Minnesota 55987</h3>
+        <p id="copyRight">Copyright 2020 - RTP Company, All Rights Reserved</p>
     </footer>
 </body> 
 </html>

@@ -1,126 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home Page</title>
-        <LINK REL=StyleSheet HREF="../css/style.css" TYPE="text/css" MEDIA=screen>
-    </head>
-    <body>
-        <header id="pageHeader">
-            <img src="../img/rtpheader.jpg" alt="RTP Header" style="width: 100%; height: 100%;"> <!--style="width:1325px;height:110px;"> -->
-        </header>
-        <section id="topofpage">
-            <h2 id="hellomsg"><em>Hello Mike Mohr!</em></h2>
-            <h2 id="welcomemsg">Welcome To The RTP - U.S. Employee Information Portal !</h2>
-            <nav><a href="logout.html" class="navbuttons">Log Out</a></nav>
-            <nav><a href="profileinfo.html" class="navbuttons">My Profile</a></nav>    
-       </section>  
-        <section id="employeepic">
-            <img src="../img/employeepic.jpg" alt="Employee Picture" style="width:14em;height:17em;">
-        </section>   
-        <section>
-            <h5 id="lastloginmsg">Last Login: April 13, 2020 01:13 PM CST</h5>
-        </section>
-        <p class="portalSummaryHeading">You are able to view the following information on this portal:
-            <ul class="portalSummaryLines"><a href="#home_announcements" class="home_announcements">Important Announcements</a></ul>
-            <ul class="portalSummaryLines"><a href="#home_scheduleinfo" class="home_scheduleinfo">Employee Schedule Information</a></ul>
-            <ul class="portalSummaryLines"><a href="#home_employeeinfo" class="home_employeeinfo">Employee Personal Information</a></ul>
-            <ul class="portalSummaryLines"><a href="#home_payrollinfo" class="home_payrollinfo">Employee Payroll Information</a></ul>
-            <ul class="portalSummaryLines"><a href="#home_traininginfo" class="home_traininginfo">Training Information</a></ul>
-        </p>
-        <section id="home_announcements">
-            <label for="home_announcements">Important Announcements</label>
-        </section>
-        <section>
-            <p class="homepage_subheadings">
-            <label for="homepage_subheadings"><strong>04/22/20 - From: Human Resources </strong></label>
-            </p>
-            <p>
-                <strong>Subject: Washable And Preventive Masks</strong>
-                <br>
-                In the likelihood that our various States and/or Counties may require the use of personal preventive masks 
-                while out in public, RTP Company sought out a local manufacturer to make <br>
-                personal, washable, preventive masks as a benefit for each of our employees. These masks are non-medical grade...
-                <a href="announcement1.html"><strong>More</strong></a>
-             </p>
-            <p class="homepage_subheadings">
-            <label for="homepage_subheadings"><strong>04/14/20 From: Human Resources </strong></label>
-            </p>   
-            <p>         
-                <strong>Subject: FSA and HSA legislation Change</strong>
-                <br>
-                Recently passed legislation, in response to COVID-19, has included over-the-counter (OTC) medicine and 
-                medical supplies, including menstrual care products as qualified medical expenses for FSA and HSA 
-                accounts.  If you currently have a FSA or HSA account, you may now claim OTC medicine and medical 
-                supplies beginning retroactively to January 1, 2020... <a href="announcement2.html"><strong>More</strong></a>
-            </p>
-            <!-- <a href="announcement1.html">More</a> -->
-        </section>  
-        <section id="home_scheduleinfo">
-            <label for="home_scheduleinfo">Employee Schedule Information</label>
-        </section>
-        <section>
-            <p>
-                <img src="../img/calendar.JPG" 
-                alt="Employee Schedule Calendar" style="width:50em;height:30em;">   
-            </p>
-            <p><a href="vacationinfo.html" class="vacinfobutton">View Vacation Info</a></p>
-            <br>
-        </section>
-        <br>
-        <section id="home_employeeinfo">
-            <label for="home_employeeinfo">Employee Personal Information</label>
-        </section>
-        <section>
-            <p>
-                <p><strong>Job Title: </strong>Systems Software Developer</p>
-                <p><strong>Address: </strong>853 East Belleview Street, Apt. 209   Winona, MN  55987</li>
-                <p><strong>Home Phone: </strong></p>
-                <p><strong>Cell Phone: </strong>(507)458-8122</p>
-                <p><strong>Personal Email: </strong>mmohr.55987@gmail.com</p>
-                <p>
-                    <input type="checkbox" id="Yes" name="PersonalEmail" value="Yes">
-                    <label for="PersonalEmail">Send company correspondance emails also to personal email?</label>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <LINK REL=StyleSheet HREF="../css/style.css" TYPE="text/css" MEDIA=screen>
+    <script type="text/javascript" src="../js/main.js"></script>
+</head> 
+<body>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <container id="container">
+            <main id="main">
+                <header id="pageHeader">    
+                    <img src="../img/rtpheader.jpg" alt="RTP Header" style="width: 100%;">
+                </header>
+                <section id="topOfPage">
+                    <span id="helloMessage">Hello <span id="employeeName"></span>!</span>
+                    <span id="welcomeMessage">Welcome To The RTP - U.S. Employee Information Portal !</span>
+                    <nav><a href="logout.html.html" class="navButtons">Log Out</a></nav>
+                    <nav><a href="profileinfo.html" class="navButtons">My Profile</a></nav>    
+                </section>  
+                <section id="employeePic">
+                    <img src="../img/employeepic.jpg" alt="Employee Picture">
+                </section>   
+                <section id="lastLoginMessage">
+                    <h5>Last Login: <span id="lastLoginDate"></span></h5>
+                    <!-- <h5>Last Login: April 13, 2020 01:13 PM CST</h5> -->
+                </section>
+                <ul id="portalSummaryHeading">You are able to view the following information on this portal:
+                    <li class="portalSummaryLines"><a href="#importantAnnouncements">Important Announcements</a></li>
+                    <li class="portalSummaryLines"><a href="#employeeScheduleInfo">Employee Schedule Information</a></li>                  
+                    <li class="portalSummaryLines"><a href="#employeePersonalInfo">Employee Personal Information</a></li>
+                    <li class="portalSummaryLines"><a href="#employeePayrollInfo">Employee Payroll Information</a></li>
+                    <li class="portalSummaryLines"><a href="#trainingInfo">Training Information</a></li>
+                </ul>
+                </section>
+                <section id="importantAnnouncements">
+                    <label for="importantAnnouncements">Important Announcements</label>
+                </section>
+                <p class="homePageSubHeadings">
+                    <label for="homePageSubHeadings">04/22/20 - From: Human Resources</label>
                 </p>
-                <p>
-                    <a href="addrchange.html" class="addrchangebutton">Change Address/Phone</a>
+                <p class="announcement">
+                    Subject: Washable And Preventive Masks
+                    <br><br>
+                    In the likelihood that our various States and/or Counties may require the use of personal preventive masks 
+                    while out in public, RTP Company sought out a local manufacturer to <br>
+                    make personal, washable, preventive masks as a benefit for each of our employees. These masks are non-medical 
+                    grade and are not personal protective equipment...<a href="announcement1.html"><strong>More</strong></a>
                 </p>
-        </section>
-        <section id="home_payrollinfo"> 
-            <label for="home_payrollinfo">Employee Payroll Information</label>
-        </section>
-        <section>
-            <a href="../img/currpaystub.JPG">View Current Paystub</a>>
-            <a href="../img/prevpaystub.JPG">View Previous Paystub</a>
-            <a href="taxforms.html">View Tax Forms</a>
-            <a href="hrforms.html">View HR Forms</a>
-        </section>
-        <section id="home_traininginfo">
-            <label for="home_traininginfo">Training Information</label>
-        </section>
-        <section>
-            <h5 class="homepage_subheadings">
-                <label for="homepage_subheadings">Sexual Harassment In The Workplace:</label>
-            </h5>
-            <p>
-                <a href="../doc/sexualharassmentinworkplacepolicy.pdf">Company Policy On Sexual Harassment In The Workplace</a>
-                <a href="https://www.youtube.com/watch?v=NGc7KfQ3uWs">Video: Sexual Harrassment In The Workplace</a>
-                <a href="https://www.eeoc.gov/laws/types/sexual_harassment.cfm">EEOC Website</a>    
-            </p> 
-            <h5 class="homepage_subheadings">
-                <label for="homepage_subheadings">Safety In The Workplace:</label>
-            </h5>
-            <p>
-                <a href="../img/sampleworkplacesafetypolicy.jpg">Company Policy On Safety In The Workplace</a>
-                <a href="https://www.youtube.com/watch?v=GvFD6rUo6cU">Video: Safety In The Workplace</a>
-            </p>
-        </section>
-        <br><br><br><br>
-        <a href="#pageHeader" class="toTopOfPageButton">Back To Top</a>
-        <footer>
-            <img src="../img/rtpfooter2.JPG" 
-            alt="RTP Footer" style="width: 100%; height: 50%;">  <!--style="width:1325px;height:110px;" -->     
-        </footer>
-   </body> 
+                <p class="homePageSubHeadings">
+                    <label for="homePageSubHeadings">04/14/20 From: Human Resources</label>
+                </p>   
+                <p class="announcement">         
+                    Subject: FSA and HSA legislation Change
+                    <br><br>
+                    Recently passed legislation, in response to COVID-19, has included over-the-counter (OTC) medicine and 
+                    medical supplies, including menstrual care products as qualified<br>
+                    medical expenses for FSA and HSA accounts.  If you currently have a FSA or HSA account, you may now claim OTC medicine and medical 
+                    supplies beginning...<a href="announcement2.html"><strong>More</strong></a>
+                </p>
+                </section>  
+                <section id="employeeScheduleInfo">
+                    <label for="employeeScheduleInfo">Employee Schedule Information</label>     
+                </section>
+                <section>
+                    <p id="employeeCalendar">
+                        <img src="../img/calendar.JPG" 
+                        alt="Employee Schedule Calendar"> <!-- style="width:50em;height:30em;"> -->
+                    </p>
+                </section>
+                <p id="currDateHeading">Current Date:</p>
+                    <ul>
+                        <li id="hoursWorkedHeading">Hours Worked: </li>
+                        <li id="vacHoursHeading">Vacation Hours: </li> 
+                        <li id="currWeekHeading">Current Week: </li>
+                        <span id="workedHoursCurrWeek" ></span>
+                        <li id="totHoursHeading">Total For 2020: 
+                        <span id="vacHoursTotal" ></span></li>
+                        <li id="prevWeekHeading">Previous Week: 
+                        <span id="workedHoursPrevWeek" ></span></li>
+                        <li id="hoursTakenHeading">Hours Taken:
+                        <span id="vacHoursTaken" ></span></li>
+                        <li id="hoursRemainingHeading">Hours Remaining: 
+                        <span id="vacHoursRemaining" ></span></li>
+                    </ul>
+                <p>
+                    <a href="vacinfo.html" id="vacInfoButton">View Vacation Info</a></p>
+                <section id="employeePersonalInfo">
+                    <label for="employeePersonalInfo">Employee Personal Information</label>
+                </section>
+                <p id="personalInfo">
+                    <li class="personalInfoHeadings">Job Title:</li>
+                    <span id="jobTitle"></span><br>
+                    <br>
+                    <li class="personalInfoHeadings">Address: </li>
+                    <span id="homeAddr"></span><br>
+                    <li class="personalInfoHeadings">Work Phone: </li>
+                    <span id="workPhone"></span><br>
+                    <li class="personalInfoHeadings">Home Phone: </li>
+                    <span id="homePhone"></span><br>
+                    <li class="personalInfoHeadings">Cell Phone: </li>
+                    <span id="cellPhone"></span><br>
+                    <li class="personalInfoHeadings">Work email: </li>
+                    <span id="workEmail"></span><br>
+                    <li class="personalInfoHeadings">Personal Email: </li>
+                    <span id="personalEmail"></span><br>
+                </p>
+                <input type="checkbox" class="includePersonalEmail" name="includePersonalEmail" checked>
+                <label for="includePersonalEmail">Send company correspondance emails also to personal email?</label>    
+                <p>
+                    <a href="addrchange.html" class="addrChangeButton">Change Address/Phone</a>
+                </p>
+                <section id="employeePayrollInfo"> 
+                    <label for="employeePayrollInfo">Employee Payroll Information</label>
+                <!--    
+                    <p id="payrollViews">
+                        <a href="../img/currpaystub.JPG">View Current Paystub</a>>
+                        <a href="../img/prevpaystub.JPG">View Previous Paystub</a>
+                        <a href="taxforms.html">View Tax Forms</a>
+                        <a href="hrforms.html">View HR Forms</a>
+                    </p>
+                    -->
+                </section>
+                <section id="trainingInfo">
+                    <label for="trainingInfo">Training Information</label>
+                </section>
+                    <h5 class="homePageSubHeadings">
+                        <label for="homePageSubHeadings">Sexual Harassment In The Workplace:</label>
+                    </h5>
+                    <p>
+                        <a href="../doc/sexualharassmentinworkplacepolicy.pdf">Company Policy On Sexual Harassment In The Workplace</a>
+                        <a href="https://www.youtube.com/watch?v=NGc7KfQ3uWs">Video: Sexual Harrassment In The Workplace</a>
+                        <a href="https://www.eeoc.gov/laws/types/sexual_harassment.cfm">EEOC Website</a>    
+                    </p> 
+                    <h5 class="homePageSubHeadings">
+                        <label for="homePageSubHeadings">Safety In The Workplace:</label>
+                    </h5>
+                    <p>
+                        <a href="../img/sampleworkplacesafetypolicy.jpg">Company Policy On Safety In The Workplace</a>
+                        <a href="https://www.youtube.com/watch?v=GvFD6rUo6cU">Video: Safety In The Workplace</a>
+                    </p>
+                </section>
+                <br><br><br>
+                <a href="#pageHeader" class="toTopOfPageButton">Back To Top</a>
+                <footer id="footer">
+                    <h3 id="footerMessage">RTP Company Corporate Headquarters - 580 East Front Street, Winona, Minnesota 55987</h3>
+                    <p id="copyRight">Copyright 2020 - RTP Company, All Rights Reserved</p>
+                </footer>
+            </main>
+        </container>
+    </body> 
 </html>
