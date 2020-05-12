@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTP Portal - Employee Personal Info Page</title>
+    <link rel="stylesheet" href="../css/style.css" type="text/css" media=screen>
+    <script type="text/javascript" src="../js/main2.js"></script>
+</head> 
+<body>
+    <header id="header">
+        <img src="../img/rtpheader.jpg" alt="RTP Logo Header" width="100%">
+    </header>    
+    <main id="main">
+        <div class="navButtonArea">
+            <nav class="navButtonContainer">
+                <a href="home.html" class="navButton">Home</a>
+                <a href="logout.html" class="navButton">Log Out</a>
+            </nav>  
+        </div>  
+        <h1 id="employeeInfoPageHeading">My Profile Information</h1>
+        <form id="profileInfoForm"  action="https://formspree.io/mknqgqqz" method="POST">
+            <label id="detailHeading_Profile" for="employeeName_Profile">Employee name:</label>
+            <input type="text" id="employeeName_Profile" name="employeeName_Profile" readonly><br>
+            <label id="detailHeading_Profile" for="userName_Profile">UserName:</label>
+            <input type="text" id="userName_Profile" name="userName_Profile" readonly><br>
+            <label id="detailHeading_Profile" for="passWord_Profile">Password:</label>
+            <input type="text" id="passWord_Profile" name="passWord_Profile" readonly><br>
+            <br>
+            <label id="detailHeading_Profile" for="addr1_Profile">Address-1:</label>
+            <input type="text" id="addr1_Profile" name="addr1_Profile" required><br>
+            <label id="detailHeading_Profile" for="addr2">Address-2:</label>
+            <input type="text" id="addr2_Profile" name="addr2_Profile"><br>
+            <label id="detailHeading_Profile" for="city">City:</label>
+            <input type="text" id="city_Profile" name="city_Profile" required><br>
+            <label id="detailHeading_Profile" for="state">State:</label>
+            <input type="text" id="state_Profile" name="state_Profile" required><br>
+            <label id="detailHeading_Profile" for="zip">Zip-Code:</label>
+            <input type="text" id="zip_Profile" name="zip_Profile" required><br>
+            <label id="detailHeading_Profile" for="homePhone_Profile">Home Phone:</label>
+            <input type="text" id="homePhone_Profile" name="homePhone_Profile"><br>
+            <label id="detailHeading_Profile" for="cellPhone_Profile">Cell Phone:</label>
+            <input type="text" id="cellPhone_Profile" name="cellPhone_Profile"><br>
+            <label id="detailHeading_Profile" for="workPhone_Profile">Work Phone:</label>
+            <input type="text" id="workPhone_Profile" name="workPhone_Profile"><br>
+            <label id="detailHeading_Profile" for="workEmail_Profile">Work Email:</label>
+            <input type="text" id="workEmail_Profile" name="workEmail_Profile"><br>
+            <label id="detailHeading_Profile" for="workEmail_Profile">Personal Email:</label>
+            <input type="text" id="personalEmail_Profile" name="personalEmail_Profile"><br>
+            <input id="profileInfoUpdate" type="submit" value="Update Info">
+          </form>
+    </main>
+    <footer id="footer">
+        <h3 id="footerMessage">RTP Company Corporate Headquarters - 580 East Front Street, Winona, Minnesota 55987</h3>
+        <p id="copyRight">Copyright 2020 -  RTP Company, All Rights Reserved</p>
+    </footer>
+</body> 
+</html>

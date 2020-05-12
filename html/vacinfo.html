@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTP Portal - Vacation Info Page</title>
+    <link rel="stylesheet" href="../css/style.css" type="text/css" media="screen">
+    <script type="text/javascript" src="../js/main.js"></script>
+</head> 
+<body>
+    <script type="text/javascript" src="../js/main.js"></script>  
+    <main id="main">
+        <header id="header">
+            <img src="../img/rtpheader.jpg" alt="RTP Logo Header" width="100%">
+        </header>  
+        <div class="navButtonArea">
+            <nav class="navButtonContainer">
+                <a href="home.html" class="navButton">Home</a>
+                <a href="logout.html" class="navButton">Log Out</a>
+            </nav>  
+        </div>  
+        <div class="container-fluid">
+            <h1 id="employeeInfoPageHeading">My Vacation Information</h1>
+            <p id="vacHoursSummary">
+                <span class="vacHoursSummaryHeading">Total Vacation Hours For 2020: </span>
+                <span class="vacHoursSummaryDetail"> 200</span><br>
+                <span class="vacHoursSummaryHeading">Total Vacation Hours Remaining: </span>
+                <span class="vacHoursSummaryDetail"> 176</span>
+            </p>
+            <table id="vacTableArea">   <!-- style="width: 100%;">  -->
+                <tr>
+                    <th class="vacTableHeadingTxt">Date</th>
+                    <th class="vacTableHeadingNum">Hours Taken</th>
+                    <th class="vacTableHeadingNum">Totals Hours Taken</th>
+                    <th class="vacTableHeadingTxt">Total Hours Remaining</th>
+                    <th class="vacTableHeadingTxt">Floating Holiday</th>
+                </tr>
+                <tr>
+                    <td class="vacTableRowTxt"></td>
+                    <td class="vacTableRowNum">---</td>
+                    <td class="vacTableRowNum">---</td>
+                    <td class="vacTableRowNum">200</td>
+                    <td class="vacTableRowTxt"></td>
+                </tr>
+                <tr>
+                    <td class="vacTableRowTxt">Wednesday, April 8, 2020</td>
+                    <td class="vacTableRowNum">8</td>
+                    <td class="vacTableRowNum">8</td>
+                    <td class="vacTableRowNum">192</td>
+                    <td class="vacTableRowTxt"></td>
+                </tr>                
+                <tr>
+                    <td class="vacTableRowTxt">Thursday, April 9, 2020</td>
+                    <td class="vacTableRowNum">8</td>
+                    <td class="vacTableRowNum">16</td>
+                    <td class="vacTableRowNum">184</td>
+                    <td class="vacTableRowTxt"></td>
+                </tr>      
+                <tr>
+                    <td class="vacTableRowTxt">Monday, April 13, 2020</td>
+                    <td class="vacTableRowNum">8</td>
+                    <td class="vacTableRowNum">24</td>
+                    <td class="vacTableRowNum">176</td>
+                    <td class="vacTableRowTxt"></td>
+                </tr>
+            </table>
+        </div>
+        <a id="viewHolidaySched" href="holidaysched.html" name="holidaySched">View Holiday Sched</a>
+    </main>
+    <footer id="footer">
+        <h3 id="footerMessage">RTP Company Corporate Headquarters - 580 East Front Street, Winona, Minnesota 55987</h3>
+        <p id="copyRight">Copyright 2020 -  RTP Company, All Rights Reserved</p>
+    </footer>
+</body> 
+</html>
