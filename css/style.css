@@ -1,4 +1,4 @@
-/* --- global settings-------------------- */
+/* --- global settings--------------------------------------------------------- */
 
 * {
     margin: 0;
@@ -6,62 +6,58 @@
 }
 
 
-/* --- standard elements ----------------- */
+/* --- standard elements ------------------------------------------------------ */
 
 html, body {
-    height: 100%;
-    background-color: beige;
-    font-family: Arial, Tahoma, "Times New Roman", Times, serif;
-    font-size: 16px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
 
-#container {
-    min-height: 100%;
-}
-
-#main {
-    overflow: auto;
-    padding-bottom: 64px;
-}
-
-/* --- header/footer --------------------- */
-
-#footer {
-    background-color: seagreen;
+    margin-top: 0;
     position: relative;
-    margin-top: -3px;
-    /*
-    height: 100px;
-    */
-    /*
-    margin-top: -100px;
-    */
-    clear: both;
+    font-size: 16px;
+    font-family: Arial, Tahoma, "Times New Roman", Times, serif;
+    background-color: beige;
+    min-height: 100vh;
+}
+
+main {
+    margin: 0;
+    /* width: 100vh; */
+    overflow: auto;
+}
+
+
+/* --- header/footer ---------------------------------------------------------- */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    min-width: 100%;
+    text-align: center;
+    background-color: seagreen;
+    /* font-family: Verdana, Hevetica, Arial, sans-serif; */
 }
 
 #footerMessage {
     font-family: Verdana, Hevetica, Arial, sans-serif;
     font-size: 24px;
-    margin-bottom: 0;
-    padding-bottom: 0;
     font-weight: bold;
     font-style: italic;
     text-align: center;
+    color: gold;
 }
 
 #copyRight {
-    margin-bottom: 0;
-    padding-bottom: 0;
     font-size: 18px;
+    font-weight: bold;
     text-align: center;
+    color: gold;
 }
 
 
-/* --- buttons --------------------------- */
+/* --- buttons ---------------------------------------------------------------- */
 
-#logInButton {                              /* login button */
+#logInButton {                              /* log in button */
     float: left;
     display: block;
     margin-top: -160px;
@@ -82,25 +78,59 @@ html, body {
     color: black;
 }
 
-.navButtons {                               /* nav buttons */     
+.navButtonArea {
     float: right;
-    display: block;
-    /* margin-left: 175px; */
-    margin-top: 10px;
     margin-right: 20px;
+}
+
+.navButtonContainer {
+    display: flex;
+    justify-content: flex-end;
+    /* align-items: center; */
+}
+
+.navButton {                               /* nav buttons */
+    /* display: block; */
+    margin: 10px;
+    margin-top: 10px;
     width: 94px;
     height: 28px;
     background-color: seagreen;
     padding: 2px;
     padding-top: 10px;
-    border-radius: 8px;
+    border-radius: 15px;
     text-align: center;
+    /* vertical-align: middle; */
     color: white;
     font-size: 18px;
     font-weight: bold;
 }
 
-.navButtons:hover {
+.navButton:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+.payStubButton {                               /* nav buttons */
+    /* display: block; */
+
+    margin: 10px;
+    margin-top: 10px;
+    width: 94px;
+    height: 28px;
+    background-color: seagreen;
+    padding: 2px;
+    padding-top: 10px;
+    border-radius: 15px;
+    text-align: center;
+    /* vertical-align: middle; */
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    text-overflow: clip;
+}
+
+.payStubButton:hover {
     background-color: lightgray;
     color: black;
 }
@@ -111,8 +141,8 @@ html, body {
     display: block;
     width: 130px;
     height: 48px;
-    margin-bottom: 18px;
-    margin-left: 32px;
+    margin-bottom: 12px;
+    margin-left: 48px;
     padding: 2px;
     padding-top: 8px;
     border-radius: 8px;
@@ -134,7 +164,7 @@ html, body {
     width: 148px;
     height: 48px;
     margin-top: 22px;
-    margin-bottom: 28px;
+    margin-bottom: 12px;
     margin-left: 48px;
     padding: 2px;
     padding-top: 8px;
@@ -154,15 +184,19 @@ html, body {
 .toTopOfPageButton {                        /* top of page button */
     float: left;
     display: block;
-    width: 6em;
-    height: 1em;
-    background: seagreen;
-    font-size: 75%;
-    padding: .5em;  
+    width: 120px;
+    height: 32px;
+    margin-bottom: 65px;
+    margin-left: 48px;
+    padding: 2px;  
+    padding-top: 8px;
     text-align: center;
-    border-radius: 1em;
-    color: white;
     font-weight: bold;
+    border-radius: 8px;
+    font-size: 18px;
+    background: seagreen;
+    color: white;
+
 }
 
 .toTopOfPageButton:hover {
@@ -170,54 +204,74 @@ html, body {
     color: black;
 }
 
+#profileInfoSubmit {
+    margin-top: 30px;
+    margin-left: 290px;
+    width: 150px;
+    height: 10px;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: seagreen;
+    color: white;
+}
 
-/* --- id's ------------------------------ */
 
-#loginWelcomeMessage {
+/* --- id's ------------------------------------------------------------------- */
+
+#logInWelcomeMessage {
     float: left;
     margin-left: 18px;
-    margin-top: 12px;
+    margin-top: 20px;
     width: 1200px;
-    font-size: 32px;
+    font-size: 26px;
 }
 
-#loginMessage {
+#logOutMessage {
+    float: left;
+    margin-left: 18px;
+    margin-top: 20px;
+    width: 1200px;
+    font-size: 26px; 
+}
+
+#logInMessage {
     float: left;
     margin-top: 8px;
-    margin-left: 32px;
+    margin-left: 42px;
     width: 1000px;
-    font-size: 28px;
+    font-size: 22px;
 }
 
-#loginForm {
+#logInForm {
     float: left;
     margin-top: -270px; 
     margin-left: 82px;
-    width: 600px;
+    width: 550px;
     height: 125px;
     font-size: 18px;
 }
 
 #enterUserName {
-    width: 180px;
-    height: 36px;
+    width: 160px;
+    height: 28px;
     margin-bottom: 12px;
     font-size: 18px;
 }
 
 #enterPassword {
-    width: 150px;
-    height: 36px;
+    width: 120px;
+    height: 28px;
     font-size: 18px;
 }
 
-#loginSummary {
+#logInSummary {
     clear: both;
     float: left;
     margin-top: -15px;
     margin-bottom: 0;
     margin-left: 45px;
-    font-size: 28px;
+    font-size: 24px;
 }
 
 #forgotPassword {
@@ -244,7 +298,7 @@ html, body {
     font-weight: bold;
 }
 
-#lastLoginMessage {
+#lastLogInMessage {
     float: left;
     margin-left: 250px; 
     font-size: 18px;  
@@ -275,18 +329,19 @@ html, body {
 
 #importantAnnouncements, #employeeScheduleInfo, #employeePersonalInfo, #employeePayrollInfo, #trainingInfo {
     float: left;
-    background: linear-gradient(to right, #009933 0%, #ffff00 100%);
-    color: black;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 12px;
     padding-top: 8px;
-    padding-left: 15px;
+    padding-left: 22px;
     height: 36px;
     width: 100%;
     font-size: 22px;
     font-weight: bold;
     font-style: italic;
     text-decoration: underline;
+    font-family: Verdana, Hevetica, Arial, sans-serif;
+    background: linear-gradient(to right, hsl(142, 40%, 39%) 33%, #ffff00 80%);
+    color: yellow;
     clear: both;
 }
 
@@ -309,7 +364,7 @@ html, body {
     font-weight: bold;
 }
 
-#hoursWorkedHeading {
+#workedHoursHeading {
     float: left;
     margin-left: 48px;
     font-size: 18px;
@@ -334,10 +389,24 @@ html, body {
     list-style-type: none;
 }
 
-#totHoursHeading {
-    margin-left: 440px;
+#currWeekWorkedHours {
+    float: left;
+    margin-left: 40px;
+    font-size: 18px;
+    list-style-type: none;
+}
+
+#totVacHoursHeading {
+    float: left;
+    margin-left: 206px;
     font-size: 18px;
     font-weight: bold;
+    list-style-type: none;
+}
+
+#totVacHours {
+    margin-left: 60px;
+    font-size: 18px;
     list-style-type: none;
 }
 
@@ -349,14 +418,29 @@ html, body {
     list-style-type: none;
 }
 
-#hoursTakenHeading {
-    margin-left: 440px;
+#prevWeekWorkedHours {
+    float: left;
+    margin-left: 26px;
+    font-size: 18px;
+    list-style-type: none;
+}
+
+
+#takenVacHoursHeading {
+    float: left;
+    margin-left: 200px;
     font-size: 18px;
     font-weight: bold;
     list-style-type: none;
 }
 
-#hoursRemainingHeading {
+#takenVacHours {
+    margin-left: 74px;
+    font-size: 18px;
+    list-style-type: none;
+}
+
+#remainingVacHoursHeading {
     float: left;
     margin-left: 440px;
     font-size: 18px;
@@ -364,6 +448,72 @@ html, body {
     list-style-type: none;
     clear: both;
 }
+
+#remainingVacHours {
+    float: left;
+    margin-left: 30px;
+    font-size: 18px;
+    list-style-type: none;
+}
+
+#employeeInformationPageHeading {
+    margin-top: 18px;
+    margin-left: 24px;
+}
+
+#vacHoursSummary {
+    margin-top: 30px;
+    margin-left: 50  px;
+}
+
+.vacHoursSummaryHeading{
+    margin-left: 20px;
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    clear: right;
+}
+
+.vacHoursSummaryDetail{
+    float: right;
+    margin-right: 1090px;
+    font-size: 20px;
+}
+
+
+#vacTableArea {
+    /* max-width: 100%; */
+    /* min-width: 200px; */
+    margin-top: 30px;
+    margin-left: 80px;
+    /* padding: 10px; */
+
+}
+
+.vacTableHeadingTxt {
+    font-size: 18px;
+    min-width: 200px;
+    /* font-weight: bold; */
+    text-decoration: underline;
+    text-align: left;
+}
+
+.vacTableHeadingNum {
+    font-size: 18px;
+    min-width: 200px;
+    /* font-weight: bold; */
+    text-decoration: underline;
+    text-align: center;
+}
+
+.vacTableRowTxt {
+    justify-content: left;
+}
+
+
+.vacTableRowNum {
+    text-align: center;
+} 
 
 #personalInfo{
     clear: both;
@@ -383,7 +533,7 @@ html, body {
 
 #homeAddr {
     display: inline;
-    margin-left: 96px;
+    margin-left: 94px;
     font-size: 18px;
 }
    
@@ -417,7 +567,114 @@ html, body {
     font-size: 18px;
 }
 
-/* --- classes------------------------------ */
+/* #employeePayrollInfo {
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 20px;
+} */
+
+#payrollViews {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+#payStub {
+    position: relative;
+    display: grid;
+    min-width: 100vh;
+    height: auto;
+    margin-top: -90px;
+    margin-bottom: 10px;
+    margin-left: 400px;
+}
+
+#profileInfoForm {
+    margin-top: 40px;
+}
+
+#detailHeading_Profile {
+    margin-left: 100px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#employeeName_Profile {
+    margin-left: 5px;
+    font-size: 18px;
+    background-color: lightgray;
+}
+
+#userName_Profile {
+    margin-left: 53px;
+    font-size: 18px;
+    background-color: lightgray;
+}
+#passWord_Profile {
+    margin-left: 57px;
+    font-size: 18px;
+    background-color: lightgray;
+}
+
+#addr1_Profile {
+    margin-left: 54px;
+    font-size: 18px;
+}
+
+#addr2_Profile {
+    margin-left: 54px;
+    font-size: 18px;
+}
+
+#city_Profile {
+    margin-left: 108px;
+    font-size: 18px;
+}
+
+#state_Profile {
+    margin-left: 98px;
+    font-size: 18px;
+}
+
+#zip_Profile {
+    margin-left: 64px;
+    font-size: 18px;
+}
+
+#homePhone_Profile {
+    margin-left: 32px;
+    font-size: 18px;
+}
+
+#cellPhone_Profile {
+    margin-left: 49px;
+    font-size: 18px;
+}
+
+#workPhone_Profile {
+    margin-left: 38px;
+    font-size: 18px;
+}
+
+#workEmail_Profile {
+    margin-left: 44px;
+    font-size: 18px;
+}
+
+#personalEmail_Profile {
+    margin-left: 12px;
+    font-size: 18px;
+}
+
+#profileInfoSubmit {
+    margin-top: 30px;
+    margin-left: 250px;
+    width: 110px;
+    height: 30px;
+    background-color: seagreen;
+    border-radius: 10px;
+}
+
+/* --- classes----------------------------------------------------------------- */
 
 
 .portalSummaryLines {
@@ -425,15 +682,14 @@ html, body {
     margin-bottom: 8px;
     margin-left: 50px;
     font-size: 20px;
-    font-weight: bold;
     list-style: none;
 }
 
 
 .homePageSubHeadings {
     margin-top: 30px;
-    margin-bottom: 16px;
-    margin-left: 12px;
+    margin-bottom: 8px;
+    margin-left: 30px;
     font-size: 18px;
     font-weight: bold;
     text-decoration: underline;
@@ -442,10 +698,14 @@ html, body {
 }
 
 .announcement {
-    margin-left: 18px;
+    margin-left: 34px;
     font-size: 18px;
 }
 
+.announcementDocument {
+    margin-top: 30px;
+    margin-left: 18px;
+}
 
 .personalInfoHeadings {
     display: inline;
@@ -453,7 +713,6 @@ html, body {
     font-size: 18px;
     font-weight: bold;
 }
-
 
 .includePersonalEmail {
     margin-top: 24px;
@@ -465,8 +724,27 @@ html, body {
     justify-content: center;
 }
 
+.viewPayStub {
+    /* margin-left: 18px; */
+    /* margin: 20px; */
+    /* margin: 0; */
+    /* float: left; */
+    margin-bottom: 20px;
+    padding: 0;
+    padding-left: 20px;
+    font-size: 18px;
+}
 
-/* --- carousel ---------------------------- */
+.viewAltPayStub {
+    float: left;
+    margin-top: 425px;
+    margin-left: 100px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* --- carousel --------------------------------------------------------------- */
        
 section#carousel > figure > img {
     display: none;
