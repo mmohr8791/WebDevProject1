@@ -57,18 +57,18 @@
             </figure>
         </section>
         <section>
-            <form id="logInForm">
+            <form id="logInForm"> <!-- </form>action="home.html"> -->
                 <label for="enterUserName">Username:</label>
                 <input type="text" id="enterUserName" name="enterUserName" maxlength="12" required value="user1234">
                 <br>
                 <label for="enterPassword">Password:</label>
                 <input type="password" id="enterPassword" name="enterPassword" maxlength="14" required value="password123">
+                <!-- <input type="submit" id="logInButton" value="Log In"></input> -->
+                <nav>
+                    <a href="home.html" id="logInButton">Log In</a>
+                </nav>  
             </form>
-            <p>
-                <input type="submit" id="logInButton" value="Log In"></input>
-                <a href="home.html">Log In</a>
-                <p id="forgotPassword"><a href="https://www.vikings.com/">Forgot Your Password?</a></p>
-            </p>
+            <p id="forgotPassword"><a href="https://www.vikings.com/">Forgot Your Password?</a></p>
         </section>
         <p id="logInSummary">Once logged in, you will be able to view your employee<br>
                             information as well as current HR and Training documents.</p>
