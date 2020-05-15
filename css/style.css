@@ -55,208 +55,6 @@ footer {
 }
 
 
-/* --- buttons ---------------------------------------------------------------- */
-
-#logInButton {                              /* log in button */
-    float: left;
-    display: block;
-    margin-top: -160px;
-    margin-left: 175px;
-    width: 90px;
-    height: 40px;
-    background: rgb(8, 104, 51);
-    padding: 4px;
-    text-align: center;
-    border-radius: 8px;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-#logInButton:hover {                    
-    background-color: lightgray;
-    color: black;
-}
-
-.navButtonArea {
-    float: right;
-    margin-right: 20px;
-}
-
-.navButtonContainer {
-    display: flex;
-    justify-content: flex-end;
-    /* align-items: center; */
-}
-
-.navButton {                               /* nav buttons */
-    /* display: block; */
-    margin: 10px;
-    margin-top: 10px;
-    width: 94px;
-    height: 28px;
-    background-color: seagreen;
-    padding: 2px;
-    padding-top: 10px;
-    border-radius: 15px;
-    text-align: center;
-    /* vertical-align: middle; */
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.navButton:hover {
-    background-color: lightgray;
-    color: black;
-}
-
-.payStubButton {                               /* nav buttons */
-    /* display: block; */
-
-    margin: 10px;
-    margin-top: 10px;
-    width: 94px;
-    height: 28px;
-    background-color: seagreen;
-    padding: 2px;
-    padding-top: 10px;
-    border-radius: 15px;
-    text-align: center;
-    /* vertical-align: middle; */
-    color: white;
-    font-size: 13px;
-    font-weight: bold;
-    text-overflow: clip;
-}
-
-.payStubButton:hover {
-    background-color: lightgray;
-    color: black;
-}
-
-#vacInfoButton {                            /* vac button */
-    clear: both;
-    float: left;
-    display: block;
-    width: 140px;
-    height: 30px;
-    margin-top: 30px;
-    margin-bottom: 12px;
-    margin-left: 48px;
-    padding: 2px;
-    padding-top: 8px;
-    border-radius: 15px;
-    font-size: 18px;
-    text-align: center;
-    font-weight: bold;
-    color: white;
-    background: seagreen;
-}
-
-#vacInfoButton:hover {
-    background-color: lightgray;
-    color: black;
-}
-
-.addrChangeButton {                         /* addr change button */
-    float: left;
-    display: block;
-    width: 130px;
-    height: 48px;
-    margin-top: 22px;
-    margin-bottom: 12px;
-    margin-left: 48px;
-    padding: 2px;
-    padding-top: 8px;
-    border-radius: 15px;
-    font-size: 18px;
-    text-align: center;
-    font-weight: bold;
-    background: seagreen;
-    color: white;
-}
-
-.addrChangeButton:hover {
-    background-color: lightgray;
-    color: black;
-}
-
-.toTopOfPageButton {                        /* top of page button */
-    float: left;
-    display: block;
-    width: 120px;
-    height: 32px;
-    margin-bottom: 65px;
-    margin-left: 48px;
-    padding: 2px;  
-    padding-top: 8px;
-    text-align: center;
-    font-weight: bold;
-    border-radius: 15px;
-    font-size: 18px;
-    background: seagreen;
-    color: white;
-
-}
-
-.toTopOfPageButton:hover {
-    background-color: lightgray;
-    color: black;
-}
-
-#profileInfoUpdate {
-    margin-top: 24px;
-    margin-left: 250px;
-    width: 118px;
-    height: 40px;
-    background-color: seagreen;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 15px;
-}
-
-#profileInfoUpdate:hover {
-background-color: lightgray;
-color: black;
-}
-
-#viewHolidaySched {
-    /* clear: both; */
-    float: left;
-    display: block;
-    width: 190px;
-    height: 30px;
-    margin-top: 30px;
-    margin-bottom: 12px;
-    margin-left: 70px;
-    padding: 2px;
-    padding-top: 8px;
-    border-radius: 15px;
-    font-size: 18px;
-    text-align: center;
-    font-weight: bold;
-    color: white;
-    background: seagreen;
-   /*
-    margin-top: 100px;
-    margin-left: 100px;
-    width: 180px;
-    height: 40px;
-    background-color: seagreen;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 8px;
-    */
-}
-
-#viewHolidaySched:hover {
-background-color: lightgray;
-color: black;
-}
-
 /* --- id's ------------------------------------------------------------------- */
 
 #logInWelcomeMessage {
@@ -465,7 +263,6 @@ color: black;
     list-style-type: none;
 }
 
-
 #takenVacHoursHeading {
     float: left;
     margin-left: 200px;
@@ -498,28 +295,15 @@ color: black;
 
 #employeeInfoPageHeading {
     margin-top: 18px;
-    margin-left: 24px;
+    display: block;
+    text-align: center;
+    font-size: 24px;
 }
 
 #vacHoursSummary {
     margin-top: 30px;
     margin-left: 50  px;
 }
-
-.vacHoursSummaryHeading{
-    margin-left: 50px;
-    margin-right: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    clear: right;
-}
-
-.vacHoursSummaryDetail{
-    float: right;
-    margin-right: 1120px;
-    font-size: 20px;
-}
-
 
 #vacTableArea {
     /* max-width: 100%; */
@@ -530,33 +314,7 @@ color: black;
 
 }
 
-.vacTableHeadingTxt {
-    font-size: 18px;
-    min-width: 200px;
-    padding-right: 40px;
-    /* font-weight: bold; */
-    text-decoration: underline;
-    text-align: left;
-}
-
-.vacTableHeadingNum {
-    font-size: 18px;
-    min-width: 200px;
-    /* font-weight: bold; */
-    text-decoration: underline;
-    text-align: center;
-}
-
-.vacTableRowTxt {
-    justify-content: left;
-}
-
-
-.vacTableRowNum {
-    text-align: center;
-} 
-
-#personalInfo{
+#personalInfo {
     clear: both;
     list-style: none;
     margin-top: 8px;
@@ -634,7 +392,7 @@ color: black;
 }
 
 #detailHeading_Profile {
-    margin-left: 100px;
+    margin-left: 475px;
     font-size: 18px;
     font-weight: bold;
 }
@@ -653,7 +411,7 @@ color: black;
 #passWord_Profile {
     margin-left: 57px;
     font-size: 18px;
-    background-color: lightgray;
+    background-color: lightgray;`
 }
 
 #addr1_Profile {
@@ -706,9 +464,30 @@ color: black;
     font-size: 18px;
 }
 
+#holidaySchedPage {
+    clear: both;
+    margin-top: 40px;
+    max-width: 1300px;
+    text-align: center;
+}
+
+#holidaySchedMessage {
+    margin-top: 10px;
+    margin-left: 40px;
+    justify-content: center;
+    /* margin-left: 30px; */
+    max-width: 1200px; 
+}
+
+#changePassWord {
+    float: right;
+    margin-top: 75px;
+    margin-right: 275px;
+
+}
+
 
 /* --- classes----------------------------------------------------------------- */
-
 
 .portalSummaryLines {
     margin-top: 12px;
@@ -718,9 +497,8 @@ color: black;
     list-style: none;
 }
 
-
 .homePageSubHeadings {
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 8px;
     margin-left: 30px;
     font-size: 18px;
@@ -758,11 +536,10 @@ color: black;
 }
 
 .viewPayStub {
-    /* margin-left: 18px; */
-    /* margin: 20px; */
-    /* margin: 0; */
-    /* float: left; */
+    float: left;
+    margin-top: 10px;
     margin-bottom: 20px;
+    margin-left: 4px;
     padding: 0;
     padding-left: 20px;
     font-size: 18px;
@@ -774,6 +551,264 @@ color: black;
     margin-left: 100px;
     font-size: 18px;
     font-weight: bold;
+}
+
+.holidayDates {
+    font-family: Arial;
+    font-size: 18px;
+    /* max-width: 100%; */
+}
+
+.vacHoursSummaryHeading {
+    margin-left: 50px;
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    clear: right;
+}
+
+.vacHoursSummaryDetail {
+    float: right;
+    margin-right: 1120px;
+    font-size: 20px;
+}
+
+.vacTableHeadingTxt {
+    font-size: 18px;
+    min-width: 200px;
+    padding-right: 40px;
+    /* font-weight: bold; */
+    text-decoration: underline;
+    text-align: left;
+}
+
+.vacTableHeadingNum {
+    font-size: 18px;
+    min-width: 200px;
+    /* font-weight: bold; */
+    text-decoration: underline;
+    text-align: center;
+}
+
+.vacTableRowTxt {
+    justify-content: left;
+}
+
+.vacTableRowNum {
+    text-align: center;
+} 
+
+.trainingSubHeading {
+    
+    clear: right;
+    float: left;
+    margin-bottom: 25px;
+    margin-left: 54px;
+    padding: 0%;
+    /* margin-right: 10px; */
+    font-size: 18px;
+}
+
+
+/* --- buttons ---------------------------------------------------------------- */
+
+#logInButton {                              /* log in button */
+    display: block;
+    margin-top: 34px;
+    margin-left: 90px;
+    width: 76px;
+    height: 24px;
+    background: rgb(8, 104, 51);
+    padding: 8px;
+    text-align: center;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#logInButton:hover {                    
+    background-color: lightgray;
+    color: black;
+}
+
+.navButtonArea {
+    float: right;
+    margin-right: 20px;
+}
+
+.navButtonContainer {
+    display: flex;
+    justify-content: flex-end;
+    /* align-items: center; */
+}
+
+.navButton {                               /* nav buttons */
+    /* display: block; */
+    margin: 10px;
+    margin-top: 10px;
+    width: 94px;
+    height: 28px;
+    background-color: seagreen;
+    padding: 2px;
+    padding-top: 10px;
+    border-radius: 15px;
+    text-align: center;
+    /* vertical-align: middle; */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navButton:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+.payStubButton {                               /* nav buttons */
+    /* display: block; */
+
+    margin: 10px;
+    margin-top: 10px;
+    width: 94px;
+    height: 28px;
+    background-color: seagreen;
+    padding: 2px;
+    padding-top: 10px;
+    border-radius: 15px;
+    text-align: center;
+    /* vertical-align: middle; */
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    text-overflow: clip;
+}
+
+.payStubButton:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+#vacInfoButton {                            /* vac button */
+    clear: both;
+    float: left;
+    display: block;
+    width: 140px;
+    height: 30px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+    margin-left: 48px;
+    padding: 2px;
+    padding-top: 8px;
+    border-radius: 15px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background: seagreen;
+}
+
+#vacInfoButton:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+.addrChangeButton {                         /* addr change button */
+    float: left;
+    display: block;
+    width: 130px;
+    height: 48px;
+    margin-top: 22px;
+    margin-bottom: 12px;
+    margin-left: 48px;
+    padding: 2px;
+    padding-top: 8px;
+    border-radius: 15px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    background: seagreen;
+    color: white;
+}
+
+.addrChangeButton:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+.toTopOfPageButton {                        /* top of page button */
+    float: left;
+    display: block;
+    width: 120px;
+    height: 32px;
+    margin-bottom: 65px;
+    margin-left: 48px;
+    padding: 2px;  
+    padding-top: 8px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 15px;
+    font-size: 18px;
+    background: seagreen;
+    color: white;
+
+}
+
+.toTopOfPageButton:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+#profileInfoUpdate {
+    margin-top: 24px;
+    margin-left: 630px;
+    width: 118px;
+    height: 40px;
+    background-color: seagreen;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+#profileInfoUpdate:hover {
+background-color: lightgray;
+color: black;
+}
+
+#viewHolidaySched {
+    /* clear: both; */
+    float: left;
+    display: block;
+    width: 190px;
+    height: 30px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+    margin-left: 24px;
+    padding: 2px;
+    padding-top: 8px;
+    border-radius: 15px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background: seagreen;
+   /*
+    margin-top: 100px;
+    margin-left: 100px;
+    width: 180px;
+    height: 40px;
+    background-color: seagreen;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    */
+}
+
+#viewHolidaySched:hover {
+background-color: lightgray;
+color: black;
 }
 
 
@@ -789,7 +824,7 @@ section#carousel > figure.visible > img {
     float: right;
     display: block;
     margin-top: -50px;
-    margin-right: 35px;
+    margin-right: 100px;
     width: 575px;
     height: 350px;
     position: relative;
@@ -804,6 +839,7 @@ section#carousel > figure.visible > figcaption {
     clear: both;
     display: block;
     float: right;
+    margin-right: 80px;
     width: 640px;
     /* height: 48px; */
     text-align: center;
