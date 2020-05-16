@@ -22,8 +22,8 @@
 # 
 # Brief Overview Of The Company:
 RTP Company is a global thermoplastics compounder in the manufacturing 
-industry headquarted in Winona, MN.  
-Currently there are over 1200 employees employed RTP Company at the 10 different U.S. facilities (including 1 in Mexico as part of the U.S. operations).  
+industry headquartered in Winona, MN.  
+Currently there are over 1200 employees employed at RTP Company at the 10 different U.S. facilities (including 1 in Mexico as part of the U.S. operations).  
 
 (Project note: I have been employed at RTP Company for over 22 years as a 
 ERP software developer.)
@@ -50,7 +50,7 @@ Information.
 The employee also can click on the 'Log Out' button to log out of the web portal 
 and go to the 'Log Out' page.     
 # On the Home page under the Important Announcements section:
-The employee can view important announcements from different corporate department.    
+The employee can view important announcements from different corporate departments.    
 
 The announcements on the 'Home' page are a shortened view of the full announcement.  The employee can click on the 'More' link to go to the 'full announcement' page.
 # On the Home page under the Employee Schedule Information section:
