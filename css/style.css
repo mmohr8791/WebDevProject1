@@ -366,12 +366,6 @@ footer {
     font-size: 18px;
 }
 
-/* #employeePayrollInfo {
-    margin-top: 20px;
-    margin-left: 40px;
-    font-size: 20px;
-} */
-
 #payrollViews {
     margin-top: 20px;
     margin-left: 30px;
@@ -479,11 +473,45 @@ footer {
     max-width: 1200px; 
 }
 
+#passWordResetForm {
+    margin-top: 24px;
+}
+
+#passWordResetHeading {
+    margin-left: 100px;
+    margin-top: 18px;
+    margin-bottom: 38px;
+    display: block;
+    /* text-align: center; */
+    font-size: 24px;
+}
+
+#passWordResetDetailHeading {
+    margin-left: 80px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
 #changePassWord {
     float: right;
     margin-top: 75px;
     margin-right: 275px;
+}
 
+#userName {
+    margin-left: 98px;
+}
+
+#employeeIDNbr {
+    margin-left: 6px;
+}
+
+#newPassWord {
+    margin-left: 156px;
+}
+
+#newPassWordConfirm {
+    margin-left: 82px;
 }
 
 
@@ -751,7 +779,6 @@ footer {
     font-size: 18px;
     background: seagreen;
     color: white;
-
 }
 
 .toTopOfPageButton:hover {
@@ -811,6 +838,100 @@ background-color: lightgray;
 color: black;
 }
 
+#passWordChange {
+    /* float: left; */
+    display: block;
+    width: 90px;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: 680px;
+    /* padding: 2px;  */
+    padding-top: 2px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 15px;
+    font-size: 18px;
+    background: seagreen;
+    color: white;
+}
+
+#passWordChange:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+#passWordChangeCancel {
+    /* float: left; */
+    /* clear: both; */
+    display: block;
+    width: 76px;
+    height: 23px;
+    margin-top: -38px;
+    margin-left: 790px;
+    /* margin-right: 0; */
+    padding: 6px; 
+    padding-top: 7px;
+    /* padding-bottom: 0px; */
+    text-align: center;
+    font-weight: bold;
+    border-radius: 14px;
+    font-size: 18px;
+    background: seagreen;
+    color: white;
+}
+
+#passWordChangeCancel:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+#passWordReset {
+    /* float: left; */
+    display: block;
+    width: 90px;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: 370px;
+    /* padding: 2px;  */
+    padding-top: 2px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 15px;
+    font-size: 18px;
+    background: seagreen;
+    color: white;
+}
+
+#passWordReset:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+#passWordResetCancel {
+    /* float: left; */
+    /* clear: both; */
+    display: block;
+    width: 76px;
+    height: 23px;
+    margin-top: -38px;
+    margin-left: 480px;
+    /* margin-right: 0; */
+    padding: 6px; 
+    padding-top: 7px;
+    /* padding-bottom: 0px; */
+    text-align: center;
+    font-weight: bold;
+    border-radius: 15px;
+    font-size: 18px;
+    background: seagreen;
+    color: white;
+}
+
+#passWordResetCancel:hover {
+    background-color: lightgray;
+    color: black;
+}
+
 
 /* --- carousel --------------------------------------------------------------- */
        
@@ -847,33 +968,3 @@ section#carousel > figure.visible > figcaption {
     color: black;
     font-size: 24px;
 }
-
-
-/*  properties \
-color:
-font-family:
-font-size:
-font-weight:
-font-style:
-text-decoration:
-text-align:
-width:
-height:
-
-padding:
-padding-left:
-padding-right:
-padding-top:
-padding-bottom:
-margin:
-margin-left:
-margin-right:
-margin-top:
-margin-bottom:
-border:
-border-left:
-border-right:
-border-top:
-border-bottom:
-
-*/

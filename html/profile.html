@@ -18,7 +18,10 @@
                 <a href="logout.html" class="navButton">Log Out</a>
             </nav>  
         </div>  
-        <h1 id="employeeInfoPageHeading">My Profile Information</h1>
+        <h1 id="employeeInfoPageHeading">My Profile And Address/Phone Information</h1>
+        <nav id="changePassWord">
+            <a href="changepassword.html">Change Password</a>
+        </nav>
         <form id="profileInfoForm"  action="https://formspree.io/mknqgqqz" method="POST">
             <label id="detailHeading_Profile" for="employeeName_Profile">Employee name:</label>
             <input type="text" id="employeeName_Profile" name="employeeName_Profile" readonly><br>
@@ -49,6 +52,9 @@
             <input type="text" id="personalEmail_Profile" name="personalEmail_Profile"><br>
             <input id="profileInfoUpdate" type="submit" value="Update Info">
           </form>
+          <!-- <nav id="changePassWord">
+            <a href="changepassword.html">Change Password</a>
+        </nav> -->
     </main>
     <footer id="footer">
         <h3 id="footerMessage">RTP Company Corporate Headquarters - 580 East Front Street, Winona, Minnesota 55987</h3>
