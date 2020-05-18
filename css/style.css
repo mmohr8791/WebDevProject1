@@ -2,9 +2,8 @@
 
 * {
     margin: 0;
-    padding: 0;
+    padding: 0; 
 }
-
 
 /* --- standard elements ------------------------------------------------------ */
 
@@ -56,6 +55,13 @@ footer {
 
 
 /* --- id's ------------------------------------------------------------------- */
+
+#container {
+    min-height: auto;
+    min-width: 100%;
+    /* width: 200px; */
+}
+
 
 #logInWelcomeMessage {
     float: left;
@@ -191,15 +197,18 @@ footer {
     border: 8px solid seagreen;
     /* border-radius: 18px; */
     padding: -1px;
-    height: 345px;
-    width: 900px;  
+    height: 338px;
+    width: 914px;  
     clear: both;
 }
 
 #currDateHeading {
+    float: left;
     margin-left: 24px;
     font-size: 18px;
     font-weight: bold;
+    text-decoration: underline;
+    list-style-type: none;  
 }
 
 #workedHoursHeading {
@@ -225,6 +234,14 @@ footer {
     font-size: 18px;
     font-weight: bold;
     list-style-type: none;
+}
+
+#currDate {
+    /* clear: left; */
+    /* float: left; */
+    margin-left: 10px;
+    font-size: 18px;
+    list-style-type: none; 
 }
 
 #currWeekWorkedHours {
@@ -302,16 +319,8 @@ footer {
 
 #vacHoursSummary {
     margin-top: 30px;
+    margin-bottom: 30px;
     margin-left: 50  px;
-}
-
-#vacTableArea {
-    /* max-width: 100%; */
-    /* min-width: 200px; */
-    margin-top: 30px;
-    margin-left: 80px;
-    /* padding-right: 40px; */
-
 }
 
 #personalInfo {
@@ -382,6 +391,8 @@ footer {
 }
 
 #profileInfoForm {
+    min-height: auto;
+    min-width: 100%;
     margin-top: 24px;
 }
 
@@ -405,7 +416,7 @@ footer {
 #passWord_Profile {
     margin-left: 57px;
     font-size: 18px;
-    background-color: lightgray;`
+    background-color: lightgray;
 }
 
 #addr1_Profile {
@@ -461,6 +472,7 @@ footer {
 #holidaySchedPage {
     clear: both;
     margin-top: 40px;
+    min-height: auto;
     max-width: 1300px;
     text-align: center;
 }
@@ -514,6 +526,11 @@ footer {
     margin-left: 82px;
 }
 
+#workPlaceSafetyPolicyImg {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 350px;
+}
 
 /* --- classes----------------------------------------------------------------- */
 
@@ -588,11 +605,12 @@ footer {
 }
 
 .vacHoursSummaryHeading {
+    /* margin-bottom: 20px; */
     margin-left: 50px;
     margin-right: 10px;
     font-size: 20px;
     font-weight: bold;
-    clear: right;
+    clear: right    ;
 }
 
 .vacHoursSummaryDetail {
@@ -600,31 +618,6 @@ footer {
     margin-right: 1120px;
     font-size: 20px;
 }
-
-.vacTableHeadingTxt {
-    font-size: 18px;
-    min-width: 200px;
-    padding-right: 40px;
-    /* font-weight: bold; */
-    text-decoration: underline;
-    text-align: left;
-}
-
-.vacTableHeadingNum {
-    font-size: 18px;
-    min-width: 200px;
-    /* font-weight: bold; */
-    text-decoration: underline;
-    text-align: center;
-}
-
-.vacTableRowTxt {
-    justify-content: left;
-}
-
-.vacTableRowNum {
-    text-align: center;
-} 
 
 .trainingSubHeading {
     
@@ -635,6 +628,58 @@ footer {
     padding: 0%;
     /* margin-right: 10px; */
     font-size: 18px;
+}
+
+.row {
+    box-sizing: border-box;   
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+  
+  .col-1 {width: 2%;}
+  .col-2 {width: 15%;}
+  .col-3 {width: 10%;}
+  .col-4 {width: 12%;}
+  .col-5 {width: 10%;}
+  .col-6 {width: 42%;}
+  
+.vacTableTxtHeading {
+    font-size: 18px;
+    min-width: 20px;
+    padding-right: 4px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: left;
+    list-style-type: none;
+}
+
+.vacTableTxtDetail {
+    justify-content: left;
+    list-style-type: none;
+}
+
+.vacTableNumHeading {
+    font-size: 18px;
+    min-width: 20px;
+    padding-right: 4px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+    list-style-type: none;
+}
+
+.vacTableNumDetail {
+    text-align: center;
+    list-style-type: none;
 }
 
 
@@ -935,12 +980,12 @@ color: black;
 
 /* --- carousel --------------------------------------------------------------- */
        
-section#carousel > figure > img {
+div#carousel > figure > img {
     display: none;
     margin: 0px auto;
 }
 
-section#carousel > figure.visible > img {
+div#carousel > figure.visible > img {
     clear: both;
     float: right;
     display: block;
@@ -949,14 +994,14 @@ section#carousel > figure.visible > img {
     width: 575px;
     height: 350px;
     position: relative;
-    overflow: hidden;
+    overflow: scroll;
 }
 
-section#carousel > figure > figcaption {
+div#carousel > figure > figcaption {
     display: none;
 }
 
-section#carousel > figure.visible > figcaption {
+div#carousel > figure.visible > figcaption {
     clear: both;
     display: block;
     float: right;
