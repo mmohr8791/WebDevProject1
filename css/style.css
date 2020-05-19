@@ -19,7 +19,6 @@ html, body {
 
 main {
     margin: 0;
-    /* width: 100vh; */
     overflow: auto;
 }
 
@@ -34,7 +33,6 @@ footer {
     min-width: 100%;
     text-align: center;
     background-color: seagreen;
-    /* font-family: Verdana, Hevetica, Arial, sans-serif; */
 }
 
 #footerMessage {
@@ -59,7 +57,6 @@ footer {
 #container {
     min-height: auto;
     min-width: 100%;
-    /* width: 200px; */
 }
 
 
@@ -154,7 +151,6 @@ footer {
     margin-bottom: 10px;
     margin-left: 18px;
     border: 6px solid seagreen;
-    /* border-radius: 18px; */
     padding: .5px;
     height: 300px;
     width: 235px;  
@@ -190,12 +186,10 @@ footer {
 }
 
 #employeeCalendar {
-    /* float: left; */
     margin-top: 90px;
     margin-bottom: 12px;
     margin-left: 18px;
     border: 8px solid seagreen;
-    /* border-radius: 18px; */
     padding: -1px;
     height: 338px;
     width: 914px;  
@@ -237,8 +231,6 @@ footer {
 }
 
 #currDate {
-    /* clear: left; */
-    /* float: left; */
     margin-left: 10px;
     font-size: 18px;
     list-style-type: none; 
@@ -481,7 +473,6 @@ footer {
     margin-top: 10px;
     margin-left: 40px;
     justify-content: center;
-    /* margin-left: 30px; */
     max-width: 1200px; 
 }
 
@@ -494,7 +485,6 @@ footer {
     margin-top: 18px;
     margin-bottom: 38px;
     display: block;
-    /* text-align: center; */
     font-size: 24px;
 }
 
@@ -532,9 +522,8 @@ footer {
     margin-left: 300px;
     min-height: auto;
     min-width: 50%;
-    /* height: 900px;
-    width: 800px; */
 }
+
 
 /* --- classes----------------------------------------------------------------- */
 
@@ -553,7 +542,6 @@ footer {
     font-size: 18px;
     font-weight: bold;
     text-decoration: underline;
-    /* margin: 12px; */
     clear: both;
 }
 
@@ -605,11 +593,9 @@ footer {
 .holidayDates {
     font-family: Arial;
     font-size: 18px;
-    /* max-width: 100%; */
 }
 
 .vacHoursSummaryHeading {
-    /* margin-bottom: 20px; */
     margin-left: 50px;
     margin-right: 10px;
     font-size: 20px;
@@ -630,7 +616,6 @@ footer {
     margin-bottom: 25px;
     margin-left: 54px;
     padding: 0%;
-    /* margin-right: 10px; */
     font-size: 18px;
 }
 
@@ -717,11 +702,9 @@ footer {
 .navButtonContainer {
     display: flex;
     justify-content: flex-end;
-    /* align-items: center; */
 }
 
 .navButton {                               /* nav buttons */
-    /* display: block; */
     margin: 10px;
     margin-top: 10px;
     width: 94px;
@@ -731,7 +714,6 @@ footer {
     padding-top: 10px;
     border-radius: 15px;
     text-align: center;
-    /* vertical-align: middle; */
     color: white;
     font-size: 18px;
     font-weight: bold;
@@ -743,8 +725,6 @@ footer {
 }
 
 .payStubButton {                               /* nav buttons */
-    /* display: block; */
-
     margin: 10px;
     margin-top: 10px;
     width: 94px;
@@ -754,7 +734,6 @@ footer {
     padding-top: 10px;
     border-radius: 15px;
     text-align: center;
-    /* vertical-align: middle; */
     color: white;
     font-size: 13px;
     font-weight: bold;
@@ -853,7 +832,6 @@ color: black;
 }
 
 #viewHolidaySched {
-    /* clear: both; */
     float: left;
     display: block;
     width: 190px;
@@ -869,17 +847,6 @@ color: black;
     font-weight: bold;
     color: white;
     background: seagreen;
-   /*
-    margin-top: 100px;
-    margin-left: 100px;
-    width: 180px;
-    height: 40px;
-    background-color: seagreen;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 8px;
-    */
 }
 
 #viewHolidaySched:hover {
@@ -888,13 +855,11 @@ color: black;
 }
 
 #passWordChange {
-    /* float: left; */
     display: block;
     width: 90px;
     height: 40px;
     margin-top: 30px;
     margin-left: 680px;
-    /* padding: 2px;  */
     padding-top: 2px;
     text-align: center;
     font-weight: bold;
@@ -910,17 +875,13 @@ color: black;
 }
 
 #passWordChangeCancel {
-    /* float: left; */
-    /* clear: both; */
     display: block;
     width: 76px;
     height: 23px;
     margin-top: -38px;
     margin-left: 790px;
-    /* margin-right: 0; */
     padding: 6px; 
     padding-top: 7px;
-    /* padding-bottom: 0px; */
     text-align: center;
     font-weight: bold;
     border-radius: 14px;
@@ -935,13 +896,11 @@ color: black;
 }
 
 #passWordReset {
-    /* float: left; */
     display: block;
     width: 90px;
     height: 40px;
     margin-top: 30px;
     margin-left: 370px;
-    /* padding: 2px;  */
     padding-top: 2px;
     text-align: center;
     font-weight: bold;
@@ -957,17 +916,13 @@ color: black;
 }
 
 #passWordResetCancel {
-    /* float: left; */
-    /* clear: both; */
     display: block;
     width: 76px;
     height: 23px;
     margin-top: -38px;
     margin-left: 480px;
-    /* margin-right: 0; */
     padding: 6px; 
     padding-top: 7px;
-    /* padding-bottom: 0px; */
     text-align: center;
     font-weight: bold;
     border-radius: 15px;
@@ -1011,7 +966,6 @@ div#carousel > figure.visible > figcaption {
     float: right;
     margin-right: 80px;
     width: 640px;
-    /* height: 48px; */
     text-align: center;
     font-weight: bold;
     color: black;
