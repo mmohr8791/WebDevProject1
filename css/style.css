@@ -528,8 +528,12 @@ footer {
 
 #workPlaceSafetyPolicyImg {
     margin-top: 30px;
-    margin-bottom: 20px;
-    margin-left: 350px;
+    margin-bottom: 100px;
+    margin-left: 300px;
+    min-height: auto;
+    min-width: 50%;
+    /* height: 900px;
+    width: 800px; */
 }
 
 /* --- classes----------------------------------------------------------------- */
@@ -640,7 +644,7 @@ footer {
     display: table;
   }
 
-  [class*="col-"] {
+[class*="col-"] {
     float: left;
     padding: 10px;
   }
