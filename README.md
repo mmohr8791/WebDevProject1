@@ -8,6 +8,8 @@
 # repository:
 # https://github.com/mmohr8791/WebDevProject1.git
 #
+# This project is hosted with GitHub at the following url:
+# https://mmohr8791.github.io/WebDev_Project1_BasicBusinessWebsite_RTP_WebPortal/
 #
 #
 # Overview/Description Of Project:
